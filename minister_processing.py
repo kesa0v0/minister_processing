@@ -88,5 +88,5 @@ try:
     input("아무키나 눌러주세요...")
 except Exception as e:
     with open("errorlog.txt", 'w', encoding='UTF-8') as f:
-        f.write(type(e), '\n\n\n\n')
+        f.write(type(e) + '\n\n\n\n')
         f.write(e.args)
